@@ -1,0 +1,137 @@
+{% extends "base.html" %}{% block title %}Commodity Analysis{% endblock %}
+{% block content %}
+<script type="text/javascript" src="/static/javascript/Highcharts-3.0.10/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/javascript/Highcharts-3.0.10/js/highcharts.js"></script>
+<script type="text/javascript" src="/static/javascript/Highcharts-3.0.10/js/highcharts-more.js"></script>
+<script type="text/javascript" src="/static/javascript/Highcharts-3.0.10/js/exporting.js"></script>
+<script type="text/javascript" src="/static/javascript/mouse.js"></script>
+<script type="text/javascript" src="/static/javascript/gridstyle.js"></script>
+<link href="../static/css/commodity_info.css" rel="stylesheet" type="text/css" media="screen" />
+<div class="content">
+	<div class="product">
+        <h2 class="title">商品详情</h2>
+        <div class="image">
+        	<img src="{{img}}" style="width=360px;height:360px;">
+        </div>
+        <div class="info">
+        	<h3>{{name}}</h3>
+            <br>
+            <h4>ASIN	{{ASIN}}</h4>
+            <h4>商标		{{brand}}</h4>
+            <h4>当前价格		{{pa.avg_list | last}}dollars</h4>
+            <h4>总评论数		{{sa.count_list | last}}</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="post">
+    	<h2 class="title">手机参数分析</h2>
+    	<div id="feature-table">
+    		<div class="feature-title">
+				<h3>参数信息</h3>
+			</div> 
+			<table border="0" width="100%" cellpadding="4" cellspacing="0">
+			{% for object in features %}
+			<tr>
+				<td><b>{{ object.0 }}</b></td>
+				<td>{{ object.1 }}</td>
+			</tr>
+			{% endfor %}
+			</table>
+		</div>
+		<div id="feature-figure">
+			<div class="feature-title">
+				<h3>参数雷达图</h3>
+			</div>
+			<div id="feature-polar" style="width:100%;height:70%">
+				<script src="/static/javascript/feature_rank.js">
+				</script>
+				<script>
+					var x = new Array();
+					var y = new Array();
+					{% for key,value in fr.items %}  
+						x.push('{{key}}');
+						y.push({{value}});
+					{% endfor %}
+					show(x,y);
+				</script>
+			</div>
+            <div id="feature-smry">
+				<p>手机配置总评分为<em>{{fs}}</em>分<p>
+			</div>
+		</div>
+		<div id="feature-recmd">
+			<div class="feature-title">
+				<h3>相同配置产品推荐</h3>
+            </div>
+			{% for object in nfc %}
+			<div class="frame">
+				<div class="recmd-prod" onmouseOver="onmouseOver(this);" onmouseOut="onmouseOut(this);">
+					<div class='prodImg'>
+						<a href="/commodity/?ASIN={{object.ASIN}}">
+        					<img src="{{object.img}}">
+    					</a>
+            		</div>
+            		<div class='prodTitle'>
+           				{{object.name}}
+            		</div>
+            		<hr color="#f5f5f5">
+            		<div class='prodASIN'>
+    					ASIN： {{object.ASIN}}
+	   				</div>
+            	</div>
+			</div>
+            {% endfor %}
+		</div>
+	</div>
+    <hr>
+    <div class="post">
+        <h2 class="title">商品总评论数走势</h2>
+        <div id="container1" style="width:500px;height:85%">
+			<script src="/static/javascript/sales_analysis.js">
+			</script>
+			<script>
+				show({{sa.date_list}},{{sa.count_list}},'{{name}}')
+           	</script>
+		</div>
+	</div>
+    <hr>
+    <div class="post">
+        <h2 class="title">商品价格走势</h2>
+        <div id="container2" style="width:500px;height:85%">
+			<script src="/static/javascript/prices_analysis.js">
+			</script>
+			<script>
+				show({{pa.date_list}},{{pa.max_list}},{{pa.min_list}},{{pa.avg_list}},'{{name}}')
+           	</script>
+		</div>
+	</div>
+    <hr>
+    <div class="post">
+        <h2 class="title">评论内容词频分析</h2>
+        <div id="container3" style="width:500px;height:85%">
+			<script src="/static/javascript/key_words_analysis.js">
+			</script>
+			<script>
+				var x = new Array();
+				var y = new Array();
+				{% for items in kwa %}  
+					x.push('{{items.0}}');
+					y.push({{items.1}});
+				{% endfor %}
+				show(x,y,'{{name}}');
+           	</script>
+		</div>
+	</div>
+    <hr>
+    <div class="post">
+        <h2 class="title">修正评分走势</h2>
+        <div id="container" style="width:500px;height:85%">
+			<script src="/static/javascript/modified_review_analysis.js">
+			</script>
+			<script>
+				show({{mra.date_list}},{{mra.avg_list}},'{{name}}')
+           	</script>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+﻿{% extends "base.html" %}{% load pagination_tags %}{% block title %}Commodity Analysis{% endblock %}
+{% block content %}
+{% autopaginate commodity 10 %}
+<script type="text/javascript" src="/static/javascript/mouse.js"></script>
+<link href="../static/css/commodity_list.css" rel="stylesheet" type="text/css" media="screen" />
+<div id='list'>
+{% for object in commodity %}
+	<div class='frame'>
+    	<div class='prod' onmouseOver="onmouseOver(this);" onmouseOut="onmouseOut(this);">
+        	<div class='prodImg'>
+    		<a href="/commodity/?ASIN={{object.ASIN}}">
+        	<img src="{{object.img}}">
+    		</a>
+            </div>
+            <hr color="#f5f5f5">
+            <div class='prodTitle'>
+            {{object.productInfo.0.name}}
+            </div>
+            <hr color="#f5f5f5">
+            <div class='prodASIN'>
+    		ASIN： {{object.ASIN}}
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% paginate %}
+</br>
+{% endblock %}
