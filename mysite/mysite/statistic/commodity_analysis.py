@@ -332,5 +332,4 @@ def test2():
     func.print_info(c.get_hot_review())
 
 
-test2()
 
