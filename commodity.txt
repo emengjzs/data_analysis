@@ -1,0 +1,279 @@
+{
+    "category": [
+        [
+            "Beauty", 
+            "Hair Care", 
+            "Styling Products", 
+            "Hair Extensions & Wigs"
+        ], 
+        [
+            "Beauty", 
+            "Hair Care", 
+            "Styling Products", 
+            "Hair Extensions & Wigs"
+        ]
+    ], 
+
+
+    "ASIN": "B00547HWBE", 
+
+
+    "stats_info": {
+        "keywords": [
+            [
+                "feathers", 
+                4
+            ], 
+            [
+                "extension", 
+                3
+            ], 
+            [
+                "make", 
+                2
+            ], 
+            [
+                "together", 
+                2
+            ]
+        ], 
+        "review_count": 21, 
+        "star_info": {
+            "1": 5, 
+            "3": 1, 
+            "2": 2, 
+            "5": 11, 
+            "4": 2
+        }, 
+        "avg_info": "3.57"
+    }, 
+
+
+    "offer": [
+        {
+            "info": [
+                {
+                    "timestamp": "2013-10-24 20:09:07", 
+                    "price": 5.99, 
+                    "seller": {
+         	        "link":"http://www.amazon.com/shops/A3R4XZFLE576G/ref=olp_merch_name_1", 
+                        "name": "SEXY SPARKLES", 
+                        "img": "http://ecx.images-amazon.com/images/I/31Dxw99cbZL.jpg"
+                    }
+                }
+            ], 
+            "timestamp": "2013-10-24 20:09:07"
+        }, 
+        {
+            "info": [
+                {
+                    "timestamp": "2013-11-09 16:34:19", 
+                    "price": 5.99, 
+                    "seller": {
+                        "link": "http://www.amazon.com/shops/A3R4XZFLE576G/ref=olp_merch_name_1", 
+                        "name": "SEXY SPARKLES", 
+                        "img": "http://ecx.images-amazon.com/images/I/31Dxw99cbZL.jpg"
+                    }
+                }
+            ], 
+            "timestamp": "2013-11-09 16:34:19"
+        }, 
+
+	#etc...#       
+    ], 
+
+
+    "review": [
+        {
+            "content": "These five feathers are the narrow ones 
+			which are bound together as one piece with 
+			a silicone bead.  The colors are beautiful; 
+			true to the picture and about 6\" in length. 
+			I've worn them for about a month without any 
+			problem with color fading.  They still look 
+			new even though I'm constantly shampooing 
+			them and swimming in chlorinated pools for 
+			a couple hours 3 times a week.  A great purchase!      ", 
+            "star": "5.0 out of 5 stars", 
+            "helpRate": "\n        10 of 13", 
+            "publishTime": "2011-10-17 00:00:00", 
+            "summary": "Feathers for hair", 
+            "profileUrl": "/gp/pdp/profile/A27X3U2G95KK23/ref=cm_cr_pr_pdp", 
+            "consumer": "Sasha"
+        }, 
+        {
+            "content": "You get one skinny feather and a thread.  
+			You don't get the little tool to put them 
+			on with.  And if you buy more than one, 
+			they put them in the same skinny envelope 
+			but charge you double, or triple or however 
+			many you buy.  Rip OFF!      ", 
+            "star": "1.0 out of 5 stars", 
+            "helpRate": "\n        2 of 2", 
+            "publishTime": "2012-05-28 00:00:00", 
+            "summary": "You get ONE, NOT FIVE!", 
+            "profileUrl": "/gp/pdp/profile/A7JVRLYZU2LG8/ref=cm_cr_pr_pdp", 
+            "consumer": "Trisha"
+        },   
+	#etc...#          
+    ], 
+
+
+    "seller": [
+        {
+            "timestamp": "2013-10-24 20:09:07", 
+            "seller": [
+                {
+                    "link": "http://www.amazon.com/shops/A3R4XZFLE576G/ref=olp_merch_name_1", 
+                    "name": "SEXY SPARKLES", 
+                    "img": "http://ecx.images-amazon.com/images/I/31Dxw99cbZL.jpg"
+                }
+            ]
+        }, 
+        {
+            "timestamp": "2013-11-09 16:34:19", 
+            "seller": [
+                {
+                    "link": "http://www.amazon.com/shops/A3R4XZFLE576G/ref=olp_merch_name_1", 
+                    "name": "SEXY SPARKLES", 
+                    "img": "http://ecx.images-amazon.com/images/I/31Dxw99cbZL.jpg"
+                }
+            ]
+        }, 
+        
+    ], 
+
+
+    "productInfo": [
+        {
+            "productDescription": "4\" to 10\" in Length 5 Dark Purple 
+				  (1 Set of 5 Feathers Bunched Together Make 
+				  ONE Extension )With Natural Brown Mix Feathers 
+				  for Hair Extension! 5 Feathers", 
+            "name": "4\" to 10\" in Length 5 Dark Purple 
+		    (1 Set of 5 Feathers Bunched Together Make 
+		    ONE Extension )With Natural Brown Mix Feathers 
+		    for Hair Extension! 5 Feathers", 
+            "img": "http://ecx.images-amazon.com/images/I/51dpdfVZT-L._SY300_.jpg", 
+            "timestamp": "2014-03-10 10:58:31", 
+            "brand": {
+                "link": "/s/ref=bl_sr_beauty?ie=UTF8&field-brandtextbin=SEXY+SPARKLES&node=3760911", 
+                "name": "SEXY SPARKLES"
+            }, 
+            "feature": [
+                "5 Feathers bonded together at the tip to make one extension"
+            ], 
+            "productDetail": [
+                {
+                    "UPC": "", 
+                    "bestSellerRank": [
+                        "#102,789 ['Beauty']"
+                    ]
+                }
+            ]
+        }
+    ]
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2389, 1665, 2033, 858, 224, 588, 194, 1673]
+---
+===
+[2550, 1791, 2085, 876, 230, 590, 213, 1713]
+---
+===
+[2658, 1860, 2141, 890, 238, 590, 221, 1729]
+---
+===
+[2779, 1900, 2208, 901, 249, 593, 230, 1753]
+---
+===
+[2874, 1957, 2254, 927, 667, 594, 235, 1776]
+---
+===
+[2965, 2051, 2307, 952, 776, 595, 244, 1799]
+---
+===
+[3049, 2129, 2349, 974, 852, 595, 253, 1817]
+---
+===
+[3193, 2173, 2386, 991, 876, 596, 257, 1839]
+---
+===
+[3284, 2202, 2425, 1014, 886, 598, 258, 1858]
+---
+===
+[3384, 2243, 2482, 1031, 891, 598, 262, 1876]
+---
+===
+[3460, 2266, 2565, 1051, 899, 599, 268, 1890]
+---
+===
+[3622, 2300, 2629, 1097, 1067, 601, 271, 1908]
+---
+===
+[3741, 2365, 2676, 1128, 1165, 606, 276, 1925]
+---
+===
+[3845, 2422, 2738, 1165, 1218, 612, 282, 1944]
+---
+===
+[3921, 2480, 2785, 1187, 1240, 613, 289, 1963]
+---
+===
+[3996, 2527, 2820, 1214, 1269, 617, 320, 1978]
+---
+===
+[4105, 2591, 2854, 1231, 1298, 623, 355, 1990]
+---
+===
+[4353, 2704, 2890, 1260, 1350, 625, 378, 2014]
+---
+===
+[4654, 2828, 2951, 1294, 1416, 630, 410, 2030]
+---
+===
+[4925, 2946, 2989, 1339, 1474, 632, 447, 2053]
+---
+===
+[5217, 3077, 3024, 1375, 1582, 632, 479, 2073]
+---
+===
+[5426, 3171, 3068, 1420, 1653, 633, 503, 2085]
+---
+===
+[5757, 3256, 3127, 1496, 1706, 636, 521, 2107]
+---
+===
+[6007, 3324, 3197, 1591, 1757, 637, 533, 2132]
+---
+===
+[6496, 3470, 3360, 1785, 1830, 638, 551, 2158]
+---
+===
+[6996, 3593, 3485, 1968, 1913, 639, 573, 2178]
+---
+===
+[7295, 3674, 3548, 2060, 1945, 640, 590, 2192]
+---
+===
+[7462, 3728, 3571, 2097, 1959, 640, 602, 2204]
+---
+===
+[7462, 3728, 3571, 2097, 1959, 640, 602, 2204]
