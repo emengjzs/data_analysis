@@ -1,0 +1,35 @@
+
+.ui-page-cur, span.ui-page-next, span.ui-page-prev {
+background-color: #EFEFEF;
+}
+.ui-page-break {
+border-right: 1px solid #E5E5E5;
+padding: 0 4px;
+line-height: 40px;
+font-weight: 700;
+}
+.ui-page a {
+background-color: #fff;
+color: #0082B0;
+cursor: pointer;
+text-decoration: none;
+}
+.ui-page-prev, .ui-page-next, .ui-page a, .ui-page-cur {
+border: 1px solid #E5E5E5;
+}
+.ui-page-prev, .ui-page-next, a.ui-page-prev, a.ui-page-next {
+padding: 12px 10px 0;
+}
+
+.ui-page-prev, .ui-page-next, .ui-page a, .ui-page-cur, .ui-page-info, .ui-page-skip {
+height: 35px;
+width: auto;
+padding: 12px 14px 0;
+}
+.ui-page {
+color: #999;
+font-size: 14px;
+font-weight: 700;
+font-family: 'Open Sans',sans-serif;
+text-align: center;
+}
