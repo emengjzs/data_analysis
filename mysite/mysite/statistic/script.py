@@ -56,5 +56,3 @@ def run2():
             key_words_dict[c['ASIN']] = top_list
     import func
     func.save('words_list',key_words_dict)
-
-run2()
