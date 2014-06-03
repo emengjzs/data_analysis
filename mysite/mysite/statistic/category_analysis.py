@@ -120,4 +120,3 @@ def test():
     func.print_info(get_sale_analysis())
     func.print_info(get_current_portion_analysis())
     func.print_info(get_portion_trend_analysis())
-test()
