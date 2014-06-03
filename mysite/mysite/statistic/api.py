@@ -76,6 +76,7 @@ def get_all_commodity_list(field=[]):
     #                                            ))
     for c in commodity_list:
         c['img'] = get_low_img(c['ASIN'])
+    print 'YOU'
     return commodity_list
 
 

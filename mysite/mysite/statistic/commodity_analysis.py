@@ -313,7 +313,7 @@ def test():
 
 
 def test2():
-    c = Commodity('B00CRNW3ZI')
+    c = Commodity('B005SLHL1W')
     print c.get_img()
     # print c.c_data['productInfo'][0]['feature']
     print c.get_sales_analysis()
@@ -330,6 +330,5 @@ def test2():
     print c.get_near_keywords_commodity(top_list)
     print c.get_modified_review_analysis()
     func.print_info(c.get_hot_review())
-
 
 

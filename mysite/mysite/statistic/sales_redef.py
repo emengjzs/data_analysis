@@ -7,16 +7,7 @@ import func
 from datetime import date
 from dateutil.relativedelta import relativedelta
 
-import api
-c_list = api.get_all_commodity_list(['review.timestamp'])
-r_list = [len(x['review']) for x in c_list]
-r_list.sort(reverse=True)
-r_set = list(set(r_list))
-r_set.sort(reverse=True)
-count_list = [0] * len(r_set)
-for r in r_list:
-    count_list[r_set.index(r)] += 1
-del c_list, r_list
+
 #销量走势分析
 def sell_count(p):
     #获得具体商品
@@ -45,7 +36,9 @@ def sell_count(p):
                     date_list.append(s_date)
                     break
     sum_review_list = [sum(count_list[0:(n+1)]) for n in range(len(count_list))]
-    rank = sum(count_list[0:r_set.index(len(p['review']))])+1
+    import func
+    r_dict = func.load('review_list')
+    rank = sum(r_dict['count_list'][0:r_dict['r_set'].index(len(p['review']))])+1
     # print date_list
 
     # 动态描述
@@ -72,4 +65,26 @@ def sell_count(p):
             'increase_rate': increase_rate,
             'description': description}
 
+def test():
 
+    import api
+    c_list = api.get_all_commodity_list(['review.timestamp'])
+    r_list = [len(x['review']) for x in c_list]
+    r_list.sort(reverse=True)
+    r_set = list(set(r_list))
+    r_set.sort(reverse=True)
+    count_list = [0] * len(r_set)
+    for r in r_list:
+        count_list[r_set.index(r)] += 1
+    import func
+    dict = {}
+    dict['r_set'] = r_set
+    dict['count_list'] = count_list
+    func.save('review_list', dict)
+    del c_list, r_list
+
+    import func
+    r_dict = func.load('review_list')
+    print r_dict
+    rank = sum(r_dict['count_list'][0:r_dict['r_set'].index(100)])+1
+    print rank

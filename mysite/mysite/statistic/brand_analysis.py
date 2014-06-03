@@ -21,7 +21,7 @@ def get_brand_commodity_list(brand_name, field=[]):
                                          field))
     clist.sort(key=lambda x: len(x['review']), reverse=True)
     for c in clist:
-        c['img'] = api.get_img(c['ASIN'])
+        c['img'] = api.get_low_img(c['ASIN'])
     return clist
 
 
@@ -32,7 +32,7 @@ class Brand:
 
     def __init__(self, brand_name):
         self.name = brand_name
-        self.c_list = get_brand_commodity_list(brand_name, ['stats_info.avg_info', 'review.star'])
+        self.c_list = get_brand_commodity_list(brand_name, ['stats_info.avg_info', 'review.star', 'review.publishTime'])
 
     def get_sales_analysis(self):
         """
@@ -47,6 +47,14 @@ class Brand:
                 'count_list': [brand_portion_trend.one_time_count_list[i][b]
                                for i in range(len(brand_portion_trend.date_list))]
                 }
+
+    def get_hot_commodity(self):
+        """
+        给出该品牌五大热门手机
+        评论数最多， 且在今年仍有评论的手机
+        """
+
+
 
     def get_stars_analysis(self):
         """
