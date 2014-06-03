@@ -18,9 +18,11 @@ def brand_list(request):
 def commodity_info(request):
     c = Commodity(request.GET.get('ASIN'))
     name = c.name() #商品名
+    info = c.get_info() 
     ASIN = request.GET.get('ASIN')
     brand = c.brand() #商标名
     img = c.get_img()
+    sta = c.get_star_analysis() #星级分布
     features = c.get_features()
     fr = c.get_feature_rank()
     fs = c.get_feature_score()   #手机配置总评分
@@ -28,8 +30,7 @@ def commodity_info(request):
     sa = c.get_sales_analysis()  #评论总数走势分析
     pa = c.get_prices_analysis()  #价格分析
     kwa = c.get_key_words_analysis()   #词频分析
-    mra = c.get_modified_review_analysis()   #修正评分走势
-    print "Done."
+    mra = c.get_modified_review_analysis()   #修正评分走势  
     return render_to_response('commodity_info.html', locals())
 
 def category(request):

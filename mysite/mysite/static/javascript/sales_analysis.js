@@ -20,9 +20,9 @@
 		},
         xAxis: {
             type: 'datetime',
-            dateTimeLabelFormats: { //   don't display the dummy year
+            dateTimeLabelFormats: { // don't display the dummy year
                 		millisecond: '%H:%M:%S.%L',
-				second: '%H: %M:%S',
+				second: '%H:%M:%S',
 				minute: '%H:%M',
 				hour: '%H:%M',
 				day: '%Y  %b',

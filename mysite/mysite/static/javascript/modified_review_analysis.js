@@ -1,8 +1,8 @@
-﻿function show(day,num,commodity) {
+function show(day,num,commodity) {
 	var datas = new Array();
 	for (var i = 0; i < num.length; i++) {
 		var temp = new Array();
-		temp.push(Date.UTC(day[i][0],  day[i][1]-1, day[i][2]));
+		temp.push(Date.UTC(day[i][0],  day[i][1], day[i][2]));
 		temp.push(num[i]);
   		datas.push(temp);
 	}

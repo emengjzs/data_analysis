@@ -499,7 +499,7 @@ img
 
 .product {
 	width: 100%;
-	height: 500px;
+	height: 450px;
 }
 
 .product .title {
@@ -510,6 +510,12 @@ img
 	border-left: 4px solid #0082B0;
 	color: #0082B0;
 }
+
+.info-table {
+	width: 40%;
+	height: 80%;
+}
+
 #feature {
 	width: 100%;
 	height: 70%;
@@ -530,7 +536,7 @@ img
 	text-align:center;
 	margin: 10px 0px 0px 0px;
 }
-#feature-smry em{
+em{
 	font-size: 2em;
 	color: #0082B0;
 }
@@ -546,3 +552,6 @@ img
 #feature-figure {
 	margin: 0px 45px 0px 0px;
 }
+table{ width:100%;border-collapse:collapse;border-spacing:0;border-left:1px solid #ccc;border-top:1px solid #ccc;}
+th,td{border-right:1px solid #ccc;border-bottom:1px solid #ccc;padding:10px 10px;}
+th{font-weight:bold;background:#ccc;}
