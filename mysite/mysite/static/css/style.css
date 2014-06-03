@@ -555,3 +555,8 @@ em{
 table{ width:100%;border-collapse:collapse;border-spacing:0;border-left:1px solid #ccc;border-top:1px solid #ccc;}
 th,td{border-right:1px solid #ccc;border-bottom:1px solid #ccc;padding:10px 10px;}
 th{font-weight:bold;background:#ccc;}
+.description {
+	width: 50%;
+	height: 85%;
+	float: right;
+}
