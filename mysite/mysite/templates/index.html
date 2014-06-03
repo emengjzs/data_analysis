@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>CSS3 animations - Demo 2</title>
+        <title>Time Traveller</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../static/css/normalize.css">
@@ -12,20 +12,37 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script>
-        function delayURL(url, time) { 
-			setTimeout("top.location.href='" + url + "'", time); 
+        function timedCount()
+		{
+			document.getElementById('msg1').innerHTML+='.'
+			t=setTimeout("timedCount()",1000)
+		}
+		function delayURL(url, time) { 
+			setTimeout("top.location.href='" + url + "'", time);
+			timedCount(); 
 		}
 		</script> 
     </head>
-    <body class="dm-demo2">
+    <body class="dm-demo2" style="background-image:url(../static/images/title.png)">
 
         <!-- Demo Navigation -->
+                
         <nav class="nav clearfix">
-            <button class="nav-el" id="el-topleft" onClick="delayURL('/commodity_list/',2000)"><span class="icon-bulb"></span></button>
-            <button class="nav-el" id="el-topright" onClick="delayURL('/brand_list/',2000)"><span class="icon-mail"></span></button>
-            <button class="nav-el" id="el-btmleft" onClick="delayURL('/catagory/',2000)"><span class="icon-data"></span></button>
-            <button class="nav-el" id="el-btmright" onClick="delayURL('test01.html',2000)"><span class="icon-phone"></span></button>
+            <button class="nav-el" id="el-topleft" data-id="wait" onClick="delayURL('/commodity_list/',1200)" style="BACKGROUND-IMAGE: url(../static/images/1.png)"></button>
+            <button class="nav-el" id="el-topright" data-id="wait" onClick="delayURL('/brand_list/',1200)" style="BACKGROUND-IMAGE: url(../static/images/2.png)"></button>
+            <button class="nav-el" id="el-btmleft" data-id="wait" onClick="delayURL('/category/',1200)" style="BACKGROUND-IMAGE: url(../static/images/3.png)"></button>
+            <button class="nav-el" id="el-btmright" data-id="wait" onClick="delayURL('test01.html',1200)" style="BACKGROUND-IMAGE: url(../static/images/4.png)"></button>
         </nav>
+       
+        <section class="overlay" id="wait">
+        	<div class="wrap">
+				<h1 id=msg1>Waiting...</h1>
+				<p id=msg2>Connecting to server......</p>
+                <script>
+					//timedCount()
+                </script>
+            </div>
+        </section>
        
         <script src="/static/javascript/jquery-1.10.2.min.js"></script>
         <script src="/static/javascript/plugins.js"></script>

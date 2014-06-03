@@ -120,18 +120,24 @@
     <hr>
     <div class="post">
         <h2 class="title">商品总评论数走势</h2>
-        <div id="container1" style="width:500px;height:85%">
+        <div id="container1" style="width:50%;height:85%">
 			<script src="/static/javascript/sales_analysis.js">
 			</script>
 			<script>
 				show({{sa.date_list}},{{sa.count_list}},'{{name}}')
            	</script>
 		</div>
+        <div class="description">
+        	<p>
+            左图为累计评论数折线图, 在一定程度上可以反映商品的销量趋势。{{description}}。总销量排名为<em>{{rank}}</em>。最近'''月评论数'''增长率, 百分比{{increase_rate}}<br>╱/( ◕‿‿◕ )\╲<br>
+『さぁ、仆と契约して、魔法少女になってよ！』
+            </p>
+        </div>
 	</div>
     <hr>
     <div class="post">
         <h2 class="title">商品价格走势</h2>
-        <div id="container2" style="width:500px;height:85%">
+        <div id="container2" style="width:50%;height:85%">
 			<script src="/static/javascript/prices_analysis.js">
 			</script>
 			<script>
@@ -142,7 +148,7 @@
     <hr>
     <div class="post">
         <h2 class="title">评论内容词频分析</h2>
-        <div id="container3" style="width:500px;height:85%">
+        <div id="container3" style="width:50%;height:85%">
 			<script src="/static/javascript/key_words_analysis.js">
 			</script>
 			<script>
@@ -159,7 +165,7 @@
     <hr>
     <div class="post">
         <h2 class="title">修正评分走势</h2>
-        <div id="container" style="width:500px;height:85%">
+        <div id="container" style="width:50%;height:85%">
 			<script src="/static/javascript/modified_review_analysis.js">
 			</script>
 			<script>
