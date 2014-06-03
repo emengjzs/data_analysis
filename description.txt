@@ -33,6 +33,10 @@ key_words_analysis：
         	['img' ] 商品图片url
         	其它信息请用api通过ASIN再获取
 
+modified_review_analysis：
+	静态：修正评分采用加权平均评分计算，时间越近的评分对结果评分影响越大，可及时反映当前评分状况。
+	动态：['description']: 
+
 --------------------------------------------------------
 category:
 
